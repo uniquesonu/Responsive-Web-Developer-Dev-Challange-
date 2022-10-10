@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Space+Mono:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+    padding-top: 1em;
+    gap: 2em;
+}
+
+.logo{
+    padding: 1em;
+    height: 1.5em;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 700;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    letter-spacing: -0.08em;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+.container{
+    display: flex;
+    padding: 2em;
+    justify-content: center;
+    gap: 4em;
+}
+
+.left img{
+    width: clamp(24em,100%,48em);
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+.right h1{
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 95px;
+    letter-spacing: -0.035em;
+    color: #333333;
+}
+
+.right p{
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.035em;
+    color: #4F4F4F;
+}
+.right button{
+    width: 13.5rem;
+    height: 4.25rem;
+    outline: none;
+    border: none;
+    background: #333333;
+    letter-spacing: -0.035em;
+    text-transform: uppercase;
+    color: #fff;
+}
+@media (max-width: 768px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+    }
+    .left img{
+        width: 100%;
+    }
+    .right h1{
+        font-size: 42px;
+        line-height: 64px;
+    }
+    .right p{
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+  }
